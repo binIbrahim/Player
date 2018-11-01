@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tashihul Iman</title>		
+		<link rel="stylesheet" type="text/css" href="css/foundation.min.css"/>	<!-- Include Resource Stylesheets -->
+		<script type="text/javascript" src="js/jquery.js"></script> 	<!--Include Resource Javascript.	NOTE: These are for handling things outside of the scope of AmplitudeJS-->
+		<script type="text/javascript" src="js/foundation.min.js"></script>
+		<script type="text/javascript" src="js/amplitude.js"></script> <!-- Include Amplitude JS -->
+		<script type="text/javascript" src="js/functions.js"></script>	<!--Include UX functions JS. NOTE: These are for handling things outside of the scope of AmplitudeJS-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>	<!-- Include Style Sheet -->
+	</head>
+	<body>
+		<div class="grid-x" id="blue-playlist-container">
+			<div class="large-10 medium-12 small-11 large-centered medium-centered small-centered cell" id="amplitude-player">
+				<div class="grid-x">
+					<!-- Album Art -->
+					<div class="large-6 medium-6 small-12 cell" id="amplitude-left">
+				    <img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" />
+				    <div id="player-left-bottom">
+				      <div id="time-container">
+				        <span class="current-time">
+				          <span class="amplitude-current-minutes" amplitude-main-current-minutes="true">										
+									</span>:<span class="amplitude-current-seconds" amplitude-main-current-seconds="true"></span>
+				        </span>
+				        <div id="progress-container">
+				          <input type="range" class="amplitude-song-slider" amplitude-main-song-slider="true"/>
+				          <progress id="song-played-progress" class="amplitude-song-played-progress" amplitude-main-song-played-progress="true">										
+									</progress>
+				          <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0">										
+									</progress>
+				        </div>
+				        <span class="duration">
+				          <span class="amplitude-duration-minutes" amplitude-main-duration-minutes="true"></span>:<span class="amplitude-duration-seconds" amplitude-main-duration-seconds="true"></span>
+				        </span>
+				      </div>
+
+				      <div id="control-container">
+				        <div id="repeat-container">
+				          <div class="amplitude-repeat" id="repeat"></div>
+				          <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+				        </div>
+
+				        <div id="central-control-container">
+				          <div id="central-controls">
+				            <div class="amplitude-prev" id="previous"></div>
+				            <div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
+				            <div class="amplitude-next" id="next"></div>
+				          </div>
+				        </div>
+
+				        <div id="volume-container">
+				          <div class="volume-controls">
+				            <div class="amplitude-mute amplitude-not-muted"></div>
+				            <input type="range" class="amplitude-volume-slider"/>
+				            <div class="ms-range-fix"></div>
+				          </div>
+				          <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle-right"></div>
+				        </div>
+				      </div>
+
+
+
+				      <div id="meta-container">
+				        <span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name"></span>
+
+				        <div class="song-artist-album">
+				          <span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
+				          <span amplitude-song-info="album" amplitude-main-song-info="true"></span>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+					<!-- Play list -->
+					<div class="large-6 medium-6 small-12 cell" id="amplitude-right">
+				    <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">
+				      <div class="song-now-playing-icon-container">
+				        <div class="play-button-container">
+
+				        </div>
+				        <img class="now-playing" src="./img/now-playing.svg"/>
+				      </div>
+				      <div class="song-meta-data">
+				        <span class="song-title">Nasiha (feat Imran Mustafa, ...)</span>
+				        <span class="song-artist">Mal. Usman Umar Zaahid</span>
+							</div>							
+							<a href="#" class="bandcamp-link" target="_blank">
+				        <img class="bandcamp-grey" src="./img/bandcamp-grey.svg"/>
+				        <img class="bandcamp-white" src="./img/bandcamp-white.svg"/>
+				      </a>
+				      <span class="song-duration">10:06</span>
+				    </div>
+				    <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
+				      <div class="song-now-playing-icon-container">
+				        <div class="play-button-container">
+
+				        </div>
+				        <img class="now-playing" src="./img/now-playing.svg"/>
+				      </div>
+				      <div class="song-meta-data">
+				        <span class="song-title">Salafiyya</span>
+				        <span class="song-artist">Mal. Mustafa Mudeer</span>
+				      </div>
+				      <a href="#" class="bandcamp-link" target="_blank">
+				        <img class="bandcamp-grey" src="./img/bandcamp-grey.svg"/>
+				        <img class="bandcamp-white" src="./img/bandcamp-white.svg"/>
+				      </a>
+				      <span class="song-duration">25:38</span>
+				    </div>
+				    <div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
+				      <div class="song-now-playing-icon-container">
+				        <div class="play-button-container">
+
+				        </div>
+				        <img class="now-playing" src="./img/now-playing.svg"/>
+				      </div>
+				      <div class="song-meta-data">
+				        <span class="song-title">Ta'aziyya</span>
+				        <span class="song-artist">Mal. Usman Umar Zaahid</span>
+				      </div>
+				      <a href="#" class="bandcamp-link" target="_blank">
+				        <img class="bandcamp-grey" src="./img/bandcamp-grey.svg"/>
+				        <img class="bandcamp-white" src="./img/bandcamp-white.svg"/>
+				      </a>
+				      <span class="song-duration">08:44</span>
+				    </div>				    
+				  </div>
+				</div>
+			</div>
+		</div>		
+	</body>
+	
+	<script type="text/javascript">
+		Amplitude.init({
+			"songs": [
+				{
+					"name": "NASIHA (feat  Imran Mustafa, ...)",
+					"artist": "Mal. Usman Umar Zaahid",
+					"album": "SALAF",
+					"url": "res/audio/NASIHA.mp3",
+					"cover_art_url": "res/img/test2.png"
+				},
+				{
+					"name": "SALAFIYYA",
+					"artist": "Mal Mustafa Mudeer",
+					"album": "SALAF",
+					"url": "res/audio/SALAFIYYA.mp3",
+					"cover_art_url": "res/img/test1.png"
+				},
+				{
+					"name": "TA'AZIYYA",
+					"artist": "Mal. Usman Umar Zaahid",
+					"album": "SALAF",
+					"url": "res/audio/TA'AZIYYA.mp3",
+					"cover_art_url": "res/img/test2.png"
+				}
+				// {
+				// 	"name": "I Came Running",
+				// 	"artist": "Ancient Astronauts",
+				// 	"album": "We Are to Answer",
+				// 	"url": "../songs/ICameRunning-AncientAstronauts.mp3",
+				// 	"cover_art_url": "../album-art/we-are-to-answer.jpg"
+				// },
+				// {
+				// 	"name": "First Snow",
+				// 	"artist": "Emancipator",
+				// 	"album": "Soon It Will Be Cold Enough",
+				// 	"url": "../songs/FirstSnow-Emancipator.mp3",
+				// 	"cover_art_url": "../album-art/soon-it-will-be-cold-enough.jpg"
+				// }
+			]
+		});
+	</script>
+</html>

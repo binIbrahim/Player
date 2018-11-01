@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<widget xmlns 		= "https://www.w3.org/ns/widgets"
+		xmlns:gap	= "https://phonegap.com/ns/1.0"
+		id			= "com.yusuf.mti"
+		version		= "1.0.0">
+
+	<name> TASHIHU </name>
+
+	<description>
+		Some anasheed by some islamic schorlas
+	</description>
+
+	<author href="http://ihsancc.com" email="abulqayyim32@yahoo.com">
+		Yusuf Ibrahim
+	</author>
+
+	<preference name="permissions" value="none" />
+	<preference name="Splashscreen" value="screen" />
+	<preference name="SplashScreenDelay" value="5000" />
+  	<!-- <preference name="fullscreen" value="true" />  	 -->
+	
+	<plugin name="cordova-plugin-splashscreen" source="npm" spec="5.0.2" />
+	<!--<plugin name="cordova-plugin-splashscreen" spec="5.0.2" />-->
+
+	<!--icons-->
+	<icon src="res/icon/icon.png" />
+
+		<!--android-->
+		<icon src="res/icon/android/playstore-icon.png" gap:platform="android" gap:qualifier="hdpi" />
+		<icon src="res/icon/android/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+		<icon src="res/icon/android/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+		<icon src="res/icon/android/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+		<icon src="res/icon/android/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+		<icon src="res/icon/android/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+		<icon src="res/icon/android/xxxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+
+	<!--splash-->
+	<splash src="res/icon/mti.jpg" />
+
+		<!--android-->
+		<splash src="res/screen/android/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+		<splash src="res/screen/android/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+		<splash src="res/screen/android/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+		<splash src="res/screen/android/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+		<splash src="res/screen/android/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />		
+</widget>
